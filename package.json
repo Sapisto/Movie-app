@@ -6,7 +6,8 @@
     "start": "node ./bin/www",
     "dev": "nodemon ./bin/www",
     "compile": "tsc -w",
-    "test": "jest dist/Test/endpoint.test.js"  },
+    "test": "jest dist/Test/endpoint.test.js"
+  },
   "jest": {
     "testEnvironment": "node",
     "testTimeout": 10000
