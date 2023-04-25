@@ -1,0 +1,71 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f2f2f2;
+  }
+  
+  .header-section {
+    background-color: #ffffff;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .movie-cards-section {
+    background-color: #f2f2f2;
+    padding: 20px;
+  }
+  
+  .movie-card {
+    border: none;
+    box-shadow: 0px 0px 5px #888888;
+    overflow: hidden;
+  }
+  
+  .card-img-top {
+    transition: transform 0.5s;
+  }
+  
+  .card-img-top:hover {
+    transform: scale(1.1);
+  }
+  
+  .card-body {
+    padding: 15px;
+  }
+  
+  .card-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .card-text {
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+  
+  .card-icons {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .edit-icon, .delete-icon {
+    color: #007bff;
+  }
+  
+  .edit-icon:hover, .delete-icon:hover {
+    color: #0056b3;
+    text-decoration: none;
+  }
+  
+  .edit-icon {
+    margin-right: 5px;
+  }
+  
+  .delete-icon {
+    margin-left: 5px;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .card-title {
+    font-size: 20px;
+  }
+}

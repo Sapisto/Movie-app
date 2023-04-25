@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/stylesheets/index.css">
+    <style>
+      body {
+        background-image: url('https://img.freepik.com/premium-vector/padlock-security-cyber-digital-concept_42421-738.jpg?size=626&ext=jpg&ga=GA1.1.1993364600.1682343154&semt=robertav1_2_sidr');
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+    </style>
+  </head>
+  <body>
+    <div style="background-color: #000; padding: 10px; ">
+      <marquee behavior="scroll" direction="left" scrollamount="10">
+        <h1 style="color: #fff; text-align: center; margin-bottom: 40px; margin-top: 20px;">Moviehub </h1>
+      </marquee>
+    </div>
+    <div class="login-box">
+      <h2>Sign Up</h2>
+      <form method="POST" action="/users/register">
+        <div class="user-box">
+          <% if (locals.error) { %> 
+            <% if (error === '"firstName" is not allowed to be empty') { %>
+          <div
+          style="
+          color: #fff;
+          font-size: medium;
+          font-weight: normal;
+        ">firstname is not allowed to be empty
+          </div>
+          <% } %> <% } %>
+          <input type="text" name="firstName" >
+          <label>First name:</label>
+        </div>
+        <div class="user-box">
+          <% if (locals.error) { %> 
+            <% if (error === '"lastName" is not allowed to be empty') { %>
+          <div
+          style="
+          color: #fff;
+          margin-top: 40px;
+          font-size: medium;
+          font-weight: normal;
+        ">lastname is not allowed to be empty
+          </div>
+          <% } %> <% } %>
+          <input type="text" name="lastName" >
+          <label>Last name:</label>
+        </div>
+        <div class="user-box">
+          <% if (locals.error) { %> 
+            <% if (error === '"userName" is not allowed to be empty') { %>
+          <div
+          style="
+          color: #fff;
+          font-size: medium;
+          font-weight: normal;
+        ">Email is not allowed to be empty
+          </div>
+          <% } %> <% } %>
+          <input type="text" name="userName" >
+          <label>Username:</label>
+        </div>
+        <div class="user-box">
+          <% if (locals.error) { %> 
+            <% if (error === '"email" is not allowed to be empty') { %>
+          <div
+          style="
+          color: #fff;
+          font-size: medium;
+          font-weight: normal;
+        ">Email is not allowed to be empty
+          </div>
+          <% } %> <% } %>
+          <input type="text" name="email" >
+          <label>Email:</label>
+        </div>
+        <div class="user-box">
+          <% if (locals.error) { %> 
+            <% if (error === '"password" is not allowed to be empty') { %>
+          <div
+          style="
+          color: #fff;
+          font-size: medium;
+          font-weight: normal;
+        ">password is not allowed to be empty
+          </div>
+          <% } %> <% } %>
+          <input type="password" name="password" >
+          <label>Password:</label>
+        </div>
+        <div class="user-box">
+          <% if (locals.error) { %> 
+            <% if (error === '"confirm_password" is not allowed to be empty') { %>
+          <div
+            style="
+              color: #fff;
+              margin-top: 40px;
+              font-size: medium;
+              font-weight: normal;
+            ">password does not match
+          </div>
+          <% } %> <% } %>
+          <input type="password" name="confirm_password" >
+          <label>Confirm password:</label>
+        </div>
+        <button type="submit">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          Submit
+        </button>
+      </form>
+      <p class="button text-center">Already have an account? <a class="text-white" href="/login">Login</a></p>
+    </div>
+  </body>
+</html>

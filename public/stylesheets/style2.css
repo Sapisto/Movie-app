@@ -1,0 +1,282 @@
+body {
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  background-color: #000000;
+  background-image: linear-gradient(147deg, #000000 0%, #434343 74%);
+}
+
+header {
+  position: fixed;
+  top: 0;
+  height: 80px;
+  width: 100%;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 40px;
+  background-color: #141e30;
+}
+
+.movie-card-height {
+  height: 400px;
+}
+
+.social-icons {
+  font-size: 1.5rem;
+}
+.social-icons i {
+  transition: all 0.3s ease;
+}
+.social-icons a:hover i {
+  transform: translateY(-3px);
+}
+
+section {
+  color: #ccc;
+  text-transform: uppercase;
+}
+
+ /* .background-image {
+  background-image: url("your-background-image-url.jpg");
+  /* add any other background properties you want here
+} */
+
+.card-img-top {
+  height: 200px; /* Replace 200px with your desired height */
+  object-fit: cover; /* To ensure the image fills the container while preserving aspect ratio */
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  /* add any other font properties you want here */
+}
+
+h3 {
+  font-size: 1.5rem;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  text-transform: capitalize;
+  /* add any other font properties you want here */
+}
+
+
+
+.background-image {
+  background-size:auto;
+  background-position: center center;
+  color: #ccc;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-top: 2rem;
+  letter-spacing: 0.2rem;
+}
+
+h3 {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+}
+
+
+.background-image {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-transform: capitalize;
+}
+
+h3 {
+  font-size: 20px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+h5 {
+  font-size: 15px;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+  color: #ffcc00;
+}
+
+p {
+  font-size: 10px;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+
+img {
+  border-radius: 4px;
+}
+
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+@import "compass/css3";
+
+/* @media (min-width: 992px) {
+  .col-lg-4 {
+    flex-basis: 33.33%;
+    max-width: 33.33%;
+  }
+}
+
+
+/* Dashboard */
+
+.movie-form {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.form-label {
+  font-weight: bold;
+  color: white;
+}
+
+.form-control {
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  border-color: #007bff;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+}
+
+.formSection{
+  margin-top: 50px;
+}
+
+.headerForm{
+  margin-top: 50px;
+  align-items: center;
+}
+
+.headerForm h1{
+  color: white;
+
+}
+
+.dashboard-nav a{
+  text-decoration: none;
+  color: #fff;
+}
+.dashboard-nav a:hover{
+  text-decoration: underline;
+}
+
+
+
+li {
+  list-style-type: none;
+}
+
+.movie-container{
+  min-height: 500px;
+}
+.pagination{
+  display: flex;
+  justify-content: center;
+    margin: 20px 6px 10px;
+    overflow: hidden;
+    clear: left;
+    text-align: center;
+    white-space: nowrap;
+}
+
+@media (max-width: 991px){
+.pagination ul li a {
+    line-height: 1.5;
+    font-size: 18px;
+    padding: 0 8px;
+}
+}
+.pagination ul li a, .pagination ul li button, .pagination ul li select {
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  line-height: 20px;
+  padding: 3px 8px;
+  text-decoration: none;
+}
+
+.active{
+  background-color: #004be8;
+  color: #fff;
+}
+
+.pagination ul li a{
+  transition: all .1s ease;
+}
+
+.pagination ul li a:hover{
+  background-color: #004be8;
+  color: #fff;
+  border: 1px solid #fff;
+}
+
+.pagination ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.pagination ul{
+  display: flex;
+  justify-content: space-evenly;
+  width: 14rem;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}

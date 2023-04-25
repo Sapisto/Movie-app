@@ -1,0 +1,63 @@
+  Navbar
+  .navbar-custom {
+    background-color: #221f1f;
+  }
+  .navbar-custom .navbar-brand {
+    color: #f4f4f4;
+  }
+  .navbar-custom .navbar-nav .nav-link {
+    color: #f4f4f4;
+  }
+  /* Header */
+  .header-section {
+    background-image: url('https://picsum.photos/id/106/1920/1080');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .header-section h1 {
+    font-size: 4rem;
+    color: #f4f4f4;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+  }
+  .header-section p {
+    font-size: 1.5rem;
+    color: #f4f4f4;
+  }
+  /* Movie Cards */
+  .movie-card {
+    margin-bottom: 2rem;
+  }
+  .movie-card img {
+    max-width: 100%;
+    height: auto;
+  }
+  .movie-card h3 {
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  .movie-card p {
+    margin-top: 0.5rem;
+    font-size: 1.2rem;
+  }
+  /* Footer */
+  .footer-section {
+    background-color: #221f1f;
+    color: #f4f4f4;
+    padding: 3rem 0;
+    text-align: center;
+  }
+  .footer-section p {
+    margin-bottom: 0;
+  }
+
+  .navbar-toggler-icon {
+    border: 1px solid #fff;
+    box-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  }
+  
